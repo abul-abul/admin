@@ -1,0 +1,10 @@
+body{
+	margin:0;
+}
+#domain_error{
+	background-color: #FFDFC5;
+}
+#domain_error p{
+	color:#BB1B1B;
+}
+	

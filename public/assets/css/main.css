@@ -1,0 +1,624 @@
+/* IMPORTS */
+
+@import url('normalize.css');
+
+
+
+/* BASE */
+
+body {
+   font-family: "Gotham Cond SSm A", "Gotham Cond SSm B";
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    background: url('../img/body.jpg');
+}
+
+h1 {
+    margin: 0; padding: 30px 0;
+    width: 330px; height: 72px;
+}
+
+@media (max-width: 960px) {
+    h1 {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        width: 180px; height: 39px;
+    }
+}
+
+h1 a {
+    display: block;
+    width: 330px; height: 72px;
+    background: url('../img/sprite.png') 0 -90px;
+}
+
+@media (max-width: 420px) {
+    h1 a {
+        width: 180px; height: 39px;
+        background: url('../img/sprite.png') 0 -170px;
+    }
+}
+
+h1 span {
+    display: block;
+    text-indent: -9999px;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: 600;
+}
+
+h3 {
+    position: relative;
+    margin: 0 0 30px 0; padding: 0 0 12px 0;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #532994;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h3:before {
+    display: block;
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 100%; height: 1px;
+    background: #e0e0e0;
+    content: '';
+}
+
+p {
+    margin: 0 0 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #542994;
+    -webkit-transition: text-decoration, 125ms;
+    -moz-transition: text-decoration, 125ms;
+    -o-transition: text-decoration, 125ms;
+    transition: text-decoration, 125ms;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* CONTAINER */
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+@media (max-width: 960px) {
+    .container {
+        width: auto;
+    }
+}
+
+
+
+/* LANGUAGE */
+
+.language-wrapper {
+    overflow: hidden;
+    background: #000;
+}
+
+.language-wrapper ul {
+    margin: 0;
+}
+
+@media (max-width: 960px) {
+    .language-wrapper ul {
+        margin-right: 15px;
+    }
+}
+
+.language-wrapper li {
+    float: right;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.language-wrapper a {
+    float: right;
+    padding: 12px 0;
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color, 125ms;
+    -moz-transition: color, 125ms;
+    -o-transition: color, 125ms;
+    transition: color, 125ms;
+}
+
+.language-wrapper a:hover {
+    color: #dda61e;
+}
+
+.language-wrapper a.active {
+    color: #dda61e;
+    background: url('../img/language-active.png') no-repeat bottom center;
+}
+
+
+
+/* LOGIN */
+
+.login {
+    float: left;
+    margin-right: 10%; padding-top: 15px;
+    width: 45%;
+}
+
+@media (max-width: 420px) {
+   .login {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.login .form-field {
+    width: 100%;
+}
+
+.login .form-field:first-child {
+    margin-right: 0;
+}
+
+
+
+
+/* REGISTER */
+
+.register {
+    float: left;
+    padding: 15px 0 10px 0;
+    width: 45%;
+}
+
+@media (max-width: 420px) {
+   .register {
+        width: 100%;
+    }
+}
+
+.register .button-register {
+    display: inline-block;
+    margin-top: 22px;
+}
+
+@media (max-width: 420px) {
+   .register .button-register {
+        margin-top: 0;
+    }
+}
+
+p.register-for-event {
+    margin-bottom: 50px;
+}
+
+
+
+/* TICKETS */
+
+.tickets h2 {
+    margin-bottom: 24px;
+}
+
+.tickets .message {
+    margin-bottom: 30px; padding: 8px 16px;
+    color: #fff;
+    background: #dda61e;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.tickets .message a {
+    color: #fff;
+}
+
+.tickets .update-fan-info  {
+    margin-top: 60px;
+}
+
+.match-description.first {
+    margin-top: 0;
+}
+
+.match-description {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.match-description td {
+    padding: 16px;
+    background: #532994;
+}
+
+.match-description td:hover {
+    cursor: pointer; cursor: hand;
+}
+
+.match-description .match-date {
+    width: 15%;
+}
+
+.match-description .match-date div {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 22px;
+    color: #532994;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.match-description .match-date span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.match-description .match-date .date {
+    margin-bottom: 8px; padding-bottom: 8px;
+    font-size: 26px;
+    border-bottom: 1px solid;
+}
+
+.match-description .match-title {
+    width: 60%;
+}
+
+.match-description .match-title h3 {
+    margin-bottom: 0; padding-bottom: 0;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    border-bottom: none;
+}
+
+.match-description .match-title h3:before {
+    display: none;
+}
+
+.match-description .match-info {
+    text-align: center;
+    color: #fff;
+    width: 25%;
+}
+
+.match-description .match-info p {
+    margin-bottom: 0;
+}
+
+.match-description .match-info a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.match-description .match-info .number-tickets {
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+.match-tickets {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.match-tickets td {
+    padding: 8px 16px;
+    width: 25%;
+    background: #f5f5f5;
+    border-bottom: 10px solid #fff;
+}
+
+.match-tickets .seat {
+    font-weight: bold;
+}
+
+.match-tickets .no-name {
+    color: #888;
+}
+
+.match-tickets .parking-icon {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    background: #0063b3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.match-tickets .actions {
+    text-align: center;
+}
+
+.match-tickets .button {
+    display: inline-block;
+    padding-right: 10px;
+    background-image: none;
+}
+
+.pgwModal .pm-content {
+    padding: 20px;
+}
+
+.pgwModal .pm-content .personalize-tickets-overview {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.pgwModal .pm-content .personalize-tickets-overview th,
+.pgwModal .pm-content .personalize-tickets-overview td {
+    padding: 8px 16px;
+}
+
+.pgwModal .pm-content .personalize-tickets-overview th {
+    border-bottom: 2px solid #532994;
+}
+
+.pgwModal .pm-content .personalize-tickets-overview td {
+    background: #f5f5f5;
+    border-bottom: 10px solid #fff;
+}
+
+.pgwModal .pm-content .personalize-tickets-overview .catering {
+    text-align: center;
+}
+
+.pgwModal .pm-content .buttons {
+    text-align: right;
+}
+
+
+
+/* CONTENT */
+
+.content-wrapper {
+    min-height: 759px;
+    background: url('../img/content-wrapper.jpg') no-repeat top center fixed;
+  
+}
+
+.content {
+    overflow: hidden;
+    padding: 20px;
+     background: #fff;
+}
+
+.content .page-missing {
+    margin: 60px 0;
+}
+
+
+
+/* FORM */
+
+form {
+    margin: 30px 0 0 0;
+}
+
+form.register-for-event {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+}
+
+.form-field-inline label {
+    display: inline;
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=number],
+input[type=email],
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid #ececec;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=number],
+input[type=email],
+textarea {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #c6c6c6;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+input[type=submit],
+.button {
+    padding: 8px 40px 8px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    background: #220c45 url('../img/sprite.png') no-repeat right -47px;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: background-color, 125ms;
+    -moz-transition: background-color, 125ms;
+    -o-transition: background-color, 125ms;
+    transition: background-color, 125ms;
+}
+
+input[type=submit]:hover,
+.button:hover {
+    background-color: #421786;
+}
+
+select {
+    margin: 0 5px 0 1px;
+}
+
+select.single {
+    margin: 0;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-field-group {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-field {
+    float: left;
+    margin: 0 0 30px 0;
+    width: 47%;
+}
+
+@media (max-width: 420px) {
+    .form-field {
+        width: 100%;
+    }
+}
+
+.form-field:first-child {
+    float: left;
+    margin-right: 6%;
+}
+
+.form-field.single {
+    margin-left: 0;
+}
+
+@media (max-width: 420px) {
+    .form-field:first-child {
+        margin-left: 0;
+    }
+}
+
+.form-field-inline {
+    float: left;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+.form-field-multiple {
+    float: left;
+}
+
+.form-field-multiple:first-child {
+    margin-right: 10%;
+}
+
+.form-field-multiple-50 {
+    width: 45%;
+}
+
+.form-field-multiple-30 {
+    width: 30%;
+}
+
+.form-field-multiple-70 {
+    width: 60%;
+}
+
+.form-field-full {
+    width: 100%;
+    margin-right: 0;
+}
+
+.error {
+    color: #f00;
+}
+
+.success {
+    color: #080;
+}
+.menu{
+    position: relative;
+    float: left;
+}
+#hidediv{
+    display: none;
+}
+#save_activ{
+    padding: 8px 40px 8px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    background: #220c45 url('../img/sprite.png') no-repeat right -47px;
+    border: none;
+    
+}
+#save_activ:hover{
+    background-color: #5A23B3;
+}

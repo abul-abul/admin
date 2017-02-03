@@ -1,0 +1,345 @@
+/* ==========================================================================
+   IMPORTS
+   ========================================================================== */
+
+@import url('reset.css');
+
+
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Gotham Condensed';
+    src: url('../fonts/gothamcondensed-bold-webfont.eot');
+    src: url('../fonts/gothamcondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gothamcondensed-bold-webfont.woff2') format('woff2'),
+    url('../fonts/gothamcondensed-bold-webfont.woff') format('woff'),
+    url('../fonts/gothamcondensed-bold-webfont.ttf') format('truetype'),
+    url('../fonts/gothamcondensed-bold-webfont.svg#gotham_condensedbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Condensed';
+    src: url('../fonts/gothamcondensed-book-webfont.eot');
+    src: url('../fonts/gothamcondensed-book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gothamcondensed-book-webfont.woff2') format('woff2'),
+    url('../fonts/gothamcondensed-book-webfont.woff') format('woff'),
+    url('../fonts/gothamcondensed-book-webfont.ttf') format('truetype'),
+    url('../fonts/gothamcondensed-book-webfont.svg#gotham_condensed_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ==========================================================================
+   COMMON
+   ========================================================================== */
+
+body
+{
+    font-family: 'Gotham Condensed';
+    font-size: 18px;
+    line-height: 22px;
+    font-style: normal;
+}
+
+h1
+{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+dt
+{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+dd
+{
+    margin-left: 0;
+    font-size: 34px;
+    font-weight: bold;
+    color: #dda61e;
+}
+
+
+/* ==========================================================================
+   CONTAINER
+   ========================================================================== */
+
+.container
+{
+    margin: 0 auto; padding: 40px;
+    width: 820px;
+}
+
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.header
+{
+    margin-bottom: 40px;
+}
+
+.header:after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header-logo
+{
+    float: left;
+}
+
+.header-parking
+{
+    float: right;
+    margin-right: 40px; padding: 0 20px;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    background: #0063b3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.header-barcode
+{
+    float: right;
+}
+
+.header-barcode-hash
+{
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   PERSONAL INFO
+   ========================================================================== */
+
+.personal-info
+{
+    margin-bottom: 20px;
+}
+
+.personal-info:after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.personal-info-guest
+{
+    float: left;
+    padding: 0 20px;
+    width: 420px;
+}
+
+.personal-info-company
+{
+    float: left;
+    padding: 0 20px;
+    width: 320px;
+}
+
+
+/* ==========================================================================
+   TICKET INFO
+   ========================================================================== */
+
+.ticket-info
+{
+    margin-bottom: 40px;
+    width: 820px;
+}
+
+.ticket-info-match
+{
+    padding: 20px 20px 0 20px;
+    width: 420px;
+    background: #532994;
+    color: #fff;
+    vertical-align: top;
+}
+
+.ticket-info-match dl
+{
+    margin-bottom: 38px;
+    text-transform: uppercase;
+}
+
+.ticket-info-match dt,
+.ticket-info-match dd
+{
+    color: #fff;
+}
+
+.ticket-info-match-name
+{
+    margin-bottom: 18px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.ticket-info-match-season
+{
+    margin-bottom: 18px;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.ticket-info-match-date-time
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ticket-info-address
+{
+    padding: 0 20px 20px 20px;
+    width: 420px;
+    background: #532994;
+    color: #fff;
+    vertical-align: bottom;
+}
+
+.ticket-info-ticket
+{
+    width: 320px; padding: 20px;
+    background: #efeeee;
+}
+
+.ticket-info-ticket-seat
+{
+    width: 100%;
+}
+
+.ticket-info-ticket-seat td
+{
+    width: 50%;
+}
+
+.ticket-info-ticket-seat dl
+{
+    margin-bottom: 40px;
+}
+
+.ticket-info-ticket dl.last
+{
+    margin-bottom: 20px;
+}
+
+.ticket-info-ticket-seat dd
+{
+    font-size: 46px;
+}
+
+
+/* ==========================================================================
+   ADDITIONAL INFO
+   ========================================================================== */
+
+.additional-info
+{
+    margin-bottom: 40px;
+}
+
+.additional-info:after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.additional-info-route
+{
+    float: left;
+    width: 460px;
+}
+
+.additional-info-planning
+{
+    float: left;
+    padding-left: 20px;
+    width: 320px;
+}
+
+.additional-info-planning p
+{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.additional-info-planning table
+{
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.additional-info-planning td
+{
+    padding-bottom: 15px;
+    vertical-align: top;
+}
+
+.additional-info-planning-time
+{
+    width: 70px;
+    font-weight: bold;
+    color: #dda61e;
+}
+
+
+/* ==========================================================================
+   SPONSORS
+   ========================================================================== */
+
+.sponsors
+{
+    margin-bottom: 40px;
+}
+
+.sponsors:after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sponsors li
+{
+    float: left;
+    margin-right: 40px;
+}
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer
+{
+    font-size: 13px;
+}
